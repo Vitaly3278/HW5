@@ -26,7 +26,7 @@ for (int i = 0; i < array.Length / 2; i++)
     newarray[i] = array[i] * array[(array.Length - 1) - i];
     Console.Write($"{newarray[i]} ");
 }
-if (array.Length % 2 != 0)
+if (array.Length % 2 != 0) // Если массив нечетный, добавляем среднюю цифру массива)
 {
     Console.Write(array[array.Length / 2]);
 }
