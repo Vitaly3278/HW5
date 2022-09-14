@@ -9,7 +9,7 @@ int Even(int len)
     for (int i = 0; i < len; i++)
     {
         array[i] = new Random().Next(100, 1000);
-        Console.Write($"{array[i]}, ");
+        Console.Write($"{array[i]} ");
         if (array[i] % 2 == 0)
         {
             count++;
@@ -20,6 +20,6 @@ int Even(int len)
 Console.Write("Введите размер массива: ");
 int len = int.Parse(Console.ReadLine());
 
-int c = Even(len);
+int count = Even(len);
 Console.WriteLine();
-Console.WriteLine($"Четных чисел в массиве: {c}");
+Console.WriteLine($"Четных чисел в массиве: {count}");
